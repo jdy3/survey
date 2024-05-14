@@ -17,16 +17,28 @@
       <fieldset>
         <legend>Please Enter Your Personal Details</legend>
         <label for="name" id="name-label"
-          >Name: <input id="name" type="text" placeholder="Joe Blogs" required
+          >Name:
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Joe Blogs"
+            required
         /></label>
         <label for="email" id="email-label"
           >Email:
-          <input id="email" type="email" placeholder="joe@blogs.com" required
+          <input
+            id="email"
+            name="name"
+            type="email"
+            placeholder="joe@blogs.com"
+            required
         /></label>
         <label for="number" id="number-label"
           >Age:
           <input
             id="number"
+            name="age"
             type="number"
             min="13"
             max="120"
@@ -34,7 +46,13 @@
             required
         /></label>
         <label for="country" id="'country-label"
-          >Country: <input id="country" type="text" placeholder="UK" required
+          >Country:
+          <input
+            id="country"
+            name="country"
+            type="text"
+            placeholder="UK"
+            required
         /></label>
       </fieldset>
       <fieldset>
@@ -44,7 +62,16 @@
         <legend>Bodily Autonomy & Privacy</legend>
       </fieldset>
       <fieldset>
-        <legend>Who Holds Power?</legend>
+        <legend>Who Holds Power in Your Country?</legend>
+        <label for="dropdown"
+          ><select id="dropdown" name="power-holder">
+            <option value="">--Please choose an option--</option>
+            <option value="monarchy">Unelected Hereditary Head of State</option>
+            <option value="political-party">Corrupt Chumocracy</option>
+            <option value="police-state">Police</option>
+            <option value="democracy">The People</option>
+          </select></label
+        >
       </fieldset>
       <fieldset>
         <legend>Who is Entitled to Privileges</legend>
