@@ -16,12 +16,25 @@
     <form id="survey-form">
       <fieldset>
         <legend>Please Enter Your Personal Details</legend>
-        <label for="name">Name: <input id="name" type="text" required /></label>
-        <label for="email"
-          >Email: <input id="email" type="email" required
+        <label for="name" id="name-label"
+          >Name: <input id="name" type="text" placeholder="Joe Blogs" required
         /></label>
-        <label for="number"
-          >Age: <input id="number" type="number" min="13" max="120"
+        <label for="email" id="email-label"
+          >Email:
+          <input id="email" type="email" placeholder="joe@blogs.com" required
+        /></label>
+        <label for="number" id="number-label"
+          >Age:
+          <input
+            id="number"
+            type="number"
+            min="13"
+            max="120"
+            placeholder="35"
+            required
+        /></label>
+        <label for="country" id="'country-label"
+          >Country: <input id="country" type="text" placeholder="UK" required
         /></label>
       </fieldset>
       <fieldset>
