@@ -11,25 +11,51 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: rgba(248, 244, 3, 1);
-  text-shadow: 0.3em 0.3em black;
+  text-shadow: 0.3em 0.3em rgba(0, 0, 0, 1);
   font-family: "Quicksand", sans-serif;
 }
 
 h1 {
-  margin: 1em auto;
+  margin: 2em auto;
   font-size: 7em;
   text-align: center;
 }
 
 p {
-  margin: 2em auto;
-  width: 85vw;
+  margin: 0 auto;
+  width: 80vw;
   font-size: 2.8em;
-  text-align: center;
+  text-align: justify;
 }
 
 form {
   width: 80vw;
-  margin: 5em auto;
+  margin: 7em auto;
   font-size: 2em;
+}
+
+fieldset {
+  margin-bottom: 2em;
+}
+
+#personal-details {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+#personal-details input {
+  height: 100%;
+}
+
+input,
+select,
+textarea {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgba(215, 209, 212, 0.8);
+}
+
+::placeholder {
+  color: rgba(215, 209, 212, 0.8);
+  font-size: 1.8em;
 }
