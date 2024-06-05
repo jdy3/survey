@@ -96,3 +96,15 @@ select {
   color: rgba(0, 0, 0, 0.7);
   border: none;
 }
+
+#lunch {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(231, 229, 230, 0.9);
+}
+
+#lunch label {
+  padding: 0.5em 3em;
+  font-size: 0.9em;
+}
