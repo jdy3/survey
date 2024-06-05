@@ -11,7 +11,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: rgba(248, 244, 3, 1);
-  text-shadow: 0.3em 0.3em rgba(0, 0, 0, 1);
+  text-shadow: 0.17em 0.17em rgba(0, 0, 0, 1);
   font-family: "Quicksand", sans-serif;
 }
 
@@ -19,6 +19,7 @@ h1 {
   margin: 3em auto;
   font-size: 7em;
   text-align: center;
+  text-shadow: 0.05em 0.05em rgba(0, 0, 0, 1);
 }
 
 p {
@@ -31,7 +32,7 @@ p {
 form {
   width: 80vw;
   margin: 14em auto 3em auto;
-  font-size: 2.1em;
+  font-size: 2.5em;
 }
 
 fieldset {
@@ -102,9 +103,28 @@ select {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.7);
   color: rgba(231, 229, 230, 0.9);
+  border: none;
 }
 
 #lunch label {
   padding: 0.5em 3em;
   font-size: 0.9em;
+}
+
+#violations {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(231, 229, 230, 0.9);
+  border: none;
+}
+
+#violations label {
+  font-size: 0.9em;
+  padding: 1em;
+}
+
+input[type="checkbox"] {
+  height: 1.5em;
+  width: 1.5em;
 }
