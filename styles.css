@@ -139,3 +139,21 @@ textarea {
   min-height: 5em;
   padding: 0.5em;
 }
+
+fieldset:last-of-type {
+  margin-bottom: 2em;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 1em auto -2em auto;
+  width: 15%;
+  height: 2em;
+  background-color: rgba(39, 245, 50, 1);
+  color: rgba(131, 129, 130, 1);
+  box-shadow: 0.2em 0.2em 0.1em rgba(0, 0, 0, 1);
+  font-size: 0.9em;
+  font-weight: bold;
+  border-radius: 4%;
+  border: solid rgba(100, 98, 99, 0.8);
+}
