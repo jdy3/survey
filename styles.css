@@ -16,13 +16,13 @@ body {
 }
 
 h1 {
-  margin: 2.5em auto;
+  margin: 3em auto;
   font-size: 7em;
   text-align: center;
 }
 
 p {
-  margin: -4em auto;
+  margin: -5em auto;
   width: 80vw;
   font-size: 2.8em;
   text-align: justify;
@@ -79,4 +79,20 @@ textarea {
 ::placeholder {
   color: rgba(231, 229, 230, 0.9);
   font-size: 1.8em;
+}
+
+#power {
+  display: flex;
+  justify-content: center;
+  padding: 0.3em;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+}
+
+select {
+  font-size: 0.75em;
+  text-align: center;
+  background-color: rgba(231, 229, 230, 0.9);
+  color: rgba(0, 0, 0, 0.7);
+  border: none;
 }
