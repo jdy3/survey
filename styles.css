@@ -69,6 +69,10 @@ legend {
   font-size: 0.9em;
 }
 
+.inline {
+  vertical-align: middle;
+}
+
 input,
 select,
 textarea {
