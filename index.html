@@ -9,14 +9,13 @@
   <body>
     <h1 id="title">Is Your Government Legitimate?</h1>
     <p id="description">
-      Do you live under a repressive state regime? Is your community under
-      occupation by pigs? Is your government complicit in genocide? Complete
-      this survey to determine whether it's time to overthrow the state and/or
+      Do you exist under a repressive state regime? Is your community under
+      occupation by the pigs? Is your government complicit in genocide? Complete
+      this survey to determine whether it's time to overthrow the state and / or
       renounce your citizenship.
     </p>
     <form id="survey-form">
-      <fieldset>
-        <legend>Please Enter Your Personal Details</legend>
+      <fieldset id="personal-details">
         <label for="name" id="name-label"
           >Name:
           <input
@@ -46,7 +45,7 @@
             placeholder="35"
             required
         /></label>
-        <label for="country" id="'country-label"
+        <label for="country" id="country-label"
           >Country:
           <input
             id="country"
@@ -56,15 +55,22 @@
             required
         /></label>
       </fieldset>
-      <fieldset>
+      <fieldset id="freedoms">
         <legend>Select the Basic Freedoms You Possess</legend>
         <label for="speech"
-          ><input id="speech" name="speech" value="speech" type="radio" />
+          ><input
+            id="speech"
+            class="inline"
+            name="speech"
+            value="speech"
+            type="radio"
+          />
           Freedom of Speech</label
         >
         <label for="expression"
           ><input
             id="expression"
+            class="inline"
             name="expression"
             value="expression"
             type="radio"
@@ -74,6 +80,7 @@
         <label for="protest-dissent"
           ><input
             id="protest-dissent"
+            class="inline"
             name="protest-dissent"
             value="protest-dissent"
             type="radio"
@@ -81,12 +88,19 @@
           Freedom to Dissent / Protest</label
         >
         <label for="assembly"
-          ><input id="assembly" name="assembly" value="assembly" type="radio" />
+          ><input
+            id="assembly"
+            class="inline"
+            name="assembly"
+            value="assembly"
+            type="radio"
+          />
           Freedom of Association / Assembly</label
         >
         <label for="bodily-autonomy"
           ><input
             id="bodily-autonomy"
+            class="inline"
             name="bodily-autonomy"
             value="bodily-autonomy"
             type="radio"
@@ -94,12 +108,19 @@
           Bodily Autonomy</label
         >
         <label for="privacy"
-          ><input id="privacy" name="privacy" value="privacy" type="radio" />
+          ><input
+            id="privacy"
+            class="inline"
+            name="privacy"
+            value="privacy"
+            type="radio"
+          />
           Privacy</label
         >
         <label for="no-freedoms"
           ><input
             id="no-freedoms"
+            class="inline"
             name="no-freedoms"
             value="no-freedoms"
             type="radio"
@@ -107,23 +128,25 @@
           None of the above</label
         >
       </fieldset>
-      <fieldset>
+      <fieldset id="power">
         <legend>Who Holds Power in Your Country?</legend>
         <label for="dropdown"
           ><select id="dropdown" name="power-holder">
             <option value="">--Please choose an option--</option>
+            <option value="usa">The United States Empire</option>
             <option value="monarchy">Unelected Hereditary Head of State</option>
             <option value="political-party">Corrupt Chumocracy</option>
             <option value="police-state">Police</option>
-            <option value="democracy">The People</option>
+            <option value="democracy">The People aka Democracy</option>
           </select></label
         >
       </fieldset>
-      <fieldset>
+      <fieldset id="lunch">
         <legend>Who is Entitled to a Free Lunch in Your Country?</legend>
         <label for="politicians"
           ><input
             id="politicians"
+            class="inline"
             type="radio"
             name="free-lunch"
             value="politicians"
@@ -134,6 +157,7 @@
         <label for="children"
           ><input
             id="children"
+            class="inline"
             value="children"
             type="radio"
             name="free-lunch"
@@ -141,12 +165,12 @@
           Children</label
         >
       </fieldset>
-      <fieldset>
+      <fieldset id="violations">
         <legend>Check Your Basic Human Rights Violations</legend>
         <label for="love"
           ><input id="love" value="love" type="checkbox" /> Is the State
-          isolating you from the man that you want, and thereby preventing you
-          from having a family?</label
+          isolating you from the man that you want, thereby preventing you from
+          having a family and massively increasing your risk of suicide?</label
         ><label for="suicide"
           ><input id="suicide" value="suicide" type="checkbox" /> Is the State
           isolating you from your childhood friends, therby massively increasing
@@ -157,8 +181,8 @@
           enjoy, resulting in huge loss of earnings?</label
         ><label for="surveil"
           ><input id="surveil" value="surveil" type="checkbox" /> Does the State
-          surveil you and then circulate intimate details of your mentrual cycle
-          with sexual predators?</label
+          surveil you and then circulate intimate details of your menstrual
+          cycle with sexual predators?</label
         ><label for="naked"
           ><input id="naked" value="naked" type="checkbox" /> Does the State
           livestream video of you while on Zoom, in a state of undress, in your
@@ -173,10 +197,12 @@
         <label for="pester"
           ><input id="pester" value="pester" type="checkbox" /> Does the State
           relentlessly pester and harass you with CHIS (Covert Human
-          Intelligence Sources) to coerce you into allowing abusive relatives
-          back into your life whom you have taken out Court Orders
-          against?</label
+          Intelligence Sources) to coerce you into allowing abusive relatives -
+          whom you have taken out Court Orders against - back into your
+          life?</label
         >
+      </fieldset>
+      <fieldset id="additional">
         <label for="comments"
           >Provide any additional comments:
           <textarea
